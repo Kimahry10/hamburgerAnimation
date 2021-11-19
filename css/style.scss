@@ -4,6 +4,10 @@
     --shadowColor: #b3ff87;
 }
 
+$animationSpeed: 0.4s;
+$borderColor: #000;
+$shadowColor: #b3ff87;
+
 * {
     margin: 0;
     padding: 0;
@@ -20,17 +24,17 @@
     width: 3rem;
     height: 3rem;
     cursor: pointer;
-    transition: all var(--animationSpeed) ease-in-out;
-    // border: 3px solid var(--borderColor);
+    transition: all $animationSpeed ease-in-out;
+    // border: 3px solid $borderColor;
 }
 
 .menu-btn__burger {
     width: 2rem;
     height: 5px;
-    background-color: var(--borderColor);
+    background-color: $borderColor;
     border-radius: 5px;
-    // box-shadow: 0 2px 5px var(--shadowColor);
-    transition: all var(--animationSpeed) ease-in-out;
+    // box-shadow: 0 2px 5px $shadowColor;
+    transition: all $animationSpeed ease-in-out;
 }
 
 .menu-btn__burger::before,
@@ -39,10 +43,10 @@
     position: absolute;
     width: 2rem;
     height: 5px;
-    background-color: var(--borderColor);
+    background-color: $borderColor;
     border-radius: 5px;
-    // box-shadow: 0 2px 5px var(--shadowColor);
-    transition: all var(--animationSpeed) ease-in-out;
+    // box-shadow: 0 2px 5px $shadowColor;
+    transition: all $animationSpeed ease-in-out;
 }
 
 .menu-btn__burger::before {
